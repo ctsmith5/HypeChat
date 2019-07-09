@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */; };
+		AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */; };
+		AFFFF6F322D4F3DC004C5EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6F222D4F3DC004C5EED /* ViewController.swift */; };
+		AFFFF6F622D4F3DC004C5EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F422D4F3DC004C5EED /* Main.storyboard */; };
+		AFFFF6F822D4F3DF004C5EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */; };
+		AFFFF6FB22D4F3DF004C5EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */; };
+		AFFFF70622D4F3DF004C5EED /* HYPEchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFFFF70222D4F3DF004C5EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFFF6E322D4F3DC004C5EED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFFF6EA22D4F3DC004C5EED;
+			remoteInfo = HYPEchat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFFFF6EB22D4F3DC004C5EED /* HYPEchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYPEchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFFFF6F222D4F3DC004C5EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFFFF6F522D4F3DC004C5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFFFF6FA22D4F3DF004C5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFFFF6FC22D4F3DF004C5EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFFF70122D4F3DF004C5EED /* HYPEchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPEchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPEchatTests.swift; sourceTree = "<group>"; };
+		AFFFF70722D4F3DF004C5EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFFFF6E822D4F3DC004C5EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFFF6FE22D4F3DF004C5EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFFFF6E222D4F3DC004C5EED = {
+			isa = PBXGroup;
+			children = (
+				AFFFF6ED22D4F3DC004C5EED /* HYPEchat */,
+				AFFFF70422D4F3DF004C5EED /* HYPEchatTests */,
+				AFFFF6EC22D4F3DC004C5EED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFFFF6EC22D4F3DC004C5EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF6EB22D4F3DC004C5EED /* HYPEchat.app */,
+				AFFFF70122D4F3DF004C5EED /* HYPEchatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFFFF6ED22D4F3DC004C5EED /* HYPEchat */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */,
+				AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */,
+				AFFFF6F222D4F3DC004C5EED /* ViewController.swift */,
+				AFFFF6F422D4F3DC004C5EED /* Main.storyboard */,
+				AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */,
+				AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */,
+				AFFFF6FC22D4F3DF004C5EED /* Info.plist */,
+			);
+			path = HYPEchat;
+			sourceTree = "<group>";
+		};
+		AFFFF70422D4F3DF004C5EED /* HYPEchatTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */,
+				AFFFF70722D4F3DF004C5EED /* Info.plist */,
+			);
+			path = HYPEchatTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFFFF6EA22D4F3DC004C5EED /* HYPEchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFFF70A22D4F3DF004C5EED /* Build configuration list for PBXNativeTarget "HYPEchat" */;
+			buildPhases = (
+				AFFFF6E722D4F3DC004C5EED /* Sources */,
+				AFFFF6E822D4F3DC004C5EED /* Frameworks */,
+				AFFFF6E922D4F3DC004C5EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYPEchat;
+			productName = HYPEchat;
+			productReference = AFFFF6EB22D4F3DC004C5EED /* HYPEchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFFF70022D4F3DF004C5EED /* HYPEchatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFFF70D22D4F3DF004C5EED /* Build configuration list for PBXNativeTarget "HYPEchatTests" */;
+			buildPhases = (
+				AFFFF6FD22D4F3DF004C5EED /* Sources */,
+				AFFFF6FE22D4F3DF004C5EED /* Frameworks */,
+				AFFFF6FF22D4F3DF004C5EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFFF70322D4F3DF004C5EED /* PBXTargetDependency */,
+			);
+			name = HYPEchatTests;
+			productName = HYPEchatTests;
+			productReference = AFFFF70122D4F3DF004C5EED /* HYPEchatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFFFF6E322D4F3DC004C5EED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Colin Smith";
+				TargetAttributes = {
+					AFFFF6EA22D4F3DC004C5EED = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					AFFFF70022D4F3DF004C5EED = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = AFFFF6EA22D4F3DC004C5EED;
+					};
+				};
+			};
+			buildConfigurationList = AFFFF6E622D4F3DC004C5EED /* Build configuration list for PBXProject "HYPEchat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFFFF6E222D4F3DC004C5EED;
+			productRefGroup = AFFFF6EC22D4F3DC004C5EED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFFFF6EA22D4F3DC004C5EED /* HYPEchat */,
+				AFFFF70022D4F3DF004C5EED /* HYPEchatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFFFF6E922D4F3DC004C5EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFFF6FB22D4F3DF004C5EED /* LaunchScreen.storyboard in Resources */,
+				AFFFF6F822D4F3DF004C5EED /* Assets.xcassets in Resources */,
+				AFFFF6F622D4F3DC004C5EED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFFF6FF22D4F3DF004C5EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFFFF6E722D4F3DC004C5EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFFF6F322D4F3DC004C5EED /* ViewController.swift in Sources */,
+				AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */,
+				AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFFF6FD22D4F3DF004C5EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFFF70622D4F3DF004C5EED /* HYPEchatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFFFF70322D4F3DF004C5EED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFFF6EA22D4F3DC004C5EED /* HYPEchat */;
+			targetProxy = AFFFF70222D4F3DF004C5EED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFFFF6F422D4F3DC004C5EED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFFF6F522D4F3DC004C5EED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFFF6FA22D4F3DF004C5EED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFFFF70822D4F3DF004C5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFFFF70922D4F3DF004C5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFFFF70B22D4F3DF004C5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2779EQ3QB6;
+				INFOPLIST_FILE = HYPEchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.colinsmith.HYPEchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AFFFF70C22D4F3DF004C5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2779EQ3QB6;
+				INFOPLIST_FILE = HYPEchat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.colinsmith.HYPEchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AFFFF70E22D4F3DF004C5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2779EQ3QB6;
+				INFOPLIST_FILE = HYPEchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.colinsmith.HYPEchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYPEchat.app/HYPEchat";
+			};
+			name = Debug;
+		};
+		AFFFF70F22D4F3DF004C5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2779EQ3QB6;
+				INFOPLIST_FILE = HYPEchatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.colinsmith.HYPEchatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYPEchat.app/HYPEchat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFFFF6E622D4F3DC004C5EED /* Build configuration list for PBXProject "HYPEchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFFF70822D4F3DF004C5EED /* Debug */,
+				AFFFF70922D4F3DF004C5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFFF70A22D4F3DF004C5EED /* Build configuration list for PBXNativeTarget "HYPEchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFFF70B22D4F3DF004C5EED /* Debug */,
+				AFFFF70C22D4F3DF004C5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFFF70D22D4F3DF004C5EED /* Build configuration list for PBXNativeTarget "HYPEchatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFFF70E22D4F3DF004C5EED /* Debug */,
+				AFFFF70F22D4F3DF004C5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFFFF6E322D4F3DC004C5EED /* Project object */;
+}

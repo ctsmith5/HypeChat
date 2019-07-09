@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */; };
 		AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */; };
-		AFFFF6F322D4F3DC004C5EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF6F222D4F3DC004C5EED /* ViewController.swift */; };
 		AFFFF6F622D4F3DC004C5EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F422D4F3DC004C5EED /* Main.storyboard */; };
 		AFFFF6F822D4F3DF004C5EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */; };
 		AFFFF6FB22D4F3DF004C5EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */; };
 		AFFFF70622D4F3DF004C5EED /* HYPEchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */; };
+		AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 		AFFFF6EB22D4F3DC004C5EED /* HYPEchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYPEchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AFFFF6F222D4F3DC004C5EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFFFF6F522D4F3DC004C5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFFF6FA22D4F3DF004C5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		AFFFF70122D4F3DF004C5EED /* HYPEchatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPEchatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPEchatTests.swift; sourceTree = "<group>"; };
 		AFFFF70722D4F3DF004C5EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +79,10 @@
 		AFFFF6ED22D4F3DC004C5EED /* HYPEchat */ = {
 			isa = PBXGroup;
 			children = (
-				AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */,
-				AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */,
-				AFFFF6F222D4F3DC004C5EED /* ViewController.swift */,
-				AFFFF6F422D4F3DC004C5EED /* Main.storyboard */,
-				AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */,
+				AFFFF71322D4F711004C5EED /* Resources */,
+				AFFFF71222D4F710004C5EED /* ViewController */,
+				AFFFF71122D4F70E004C5EED /* ModelController */,
+				AFFFF71022D4F70D004C5EED /* Model */,
 				AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */,
 				AFFFF6FC22D4F3DF004C5EED /* Info.plist */,
 			);
@@ -97,6 +96,39 @@
 				AFFFF70722D4F3DF004C5EED /* Info.plist */,
 			);
 			path = HYPEchatTests;
+			sourceTree = "<group>";
+		};
+		AFFFF71022D4F70D004C5EED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFFFF71122D4F70E004C5EED /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		AFFFF71222D4F710004C5EED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AFFFF71322D4F711004C5EED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF6F422D4F3DC004C5EED /* Main.storyboard */,
+				AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */,
+				AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */,
+				AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFFF6F322D4F3DC004C5EED /* ViewController.swift in Sources */,
 				AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */,
+				AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */,
 				AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

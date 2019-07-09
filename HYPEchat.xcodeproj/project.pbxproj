@@ -14,6 +14,8 @@
 		AFFFF6FB22D4F3DF004C5EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFFF6F922D4F3DF004C5EED /* LaunchScreen.storyboard */; };
 		AFFFF70622D4F3DF004C5EED /* HYPEchatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */; };
 		AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */; };
+		AFFFF71922D4F901004C5EED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFFF71822D4F901004C5EED /* CloudKit.framework */; };
+		AFFFF71B22D4FA19004C5EED /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71A22D4FA19004C5EED /* Hype.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		AFFFF70522D4F3DF004C5EED /* HYPEchatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYPEchatTests.swift; sourceTree = "<group>"; };
 		AFFFF70722D4F3DF004C5EED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeTableViewController.swift; sourceTree = "<group>"; };
+		AFFFF71622D4F8FE004C5EED /* HYPEchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HYPEchat.entitlements; sourceTree = "<group>"; };
+		AFFFF71822D4F901004C5EED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AFFFF71A22D4FA19004C5EED /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFFF71922D4F901004C5EED /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,7 @@
 				AFFFF6ED22D4F3DC004C5EED /* HYPEchat */,
 				AFFFF70422D4F3DF004C5EED /* HYPEchatTests */,
 				AFFFF6EC22D4F3DC004C5EED /* Products */,
+				AFFFF71722D4F901004C5EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,7 @@
 		AFFFF6ED22D4F3DC004C5EED /* HYPEchat */ = {
 			isa = PBXGroup;
 			children = (
+				AFFFF71622D4F8FE004C5EED /* HYPEchat.entitlements */,
 				AFFFF71322D4F711004C5EED /* Resources */,
 				AFFFF71222D4F710004C5EED /* ViewController */,
 				AFFFF71122D4F70E004C5EED /* ModelController */,
@@ -101,6 +109,7 @@
 		AFFFF71022D4F70D004C5EED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFFFF71A22D4FA19004C5EED /* Hype.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +138,14 @@
 				AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFFFF71722D4F901004C5EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFFFF71822D4F901004C5EED /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +252,7 @@
 				AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */,
 				AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */,
 				AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */,
+				AFFFF71B22D4FA19004C5EED /* Hype.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HYPEchat/HYPEchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2779EQ3QB6;
 				INFOPLIST_FILE = HYPEchat/Info.plist;
@@ -412,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HYPEchat/HYPEchat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2779EQ3QB6;
 				INFOPLIST_FILE = HYPEchat/Info.plist;

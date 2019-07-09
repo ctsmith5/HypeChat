@@ -13,34 +13,55 @@ class HypeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return HypeController.shared.hypes.count
     }
 
-    /*
+    @IBAction func newHypeButtonPRessed(_ sender: UIBarButtonItem) {
+        
+        let hypeController = UIAlertController(title: "Get Hype", message: "What is hype may never die.", preferredStyle: .alert)
+        hypeController.addTextField { (textField) in
+            textField.placeholder = "Type your comment..."
+        }
+        let postAction = UIAlertAction(title: "Post", style: .default) { (post) in
+            guard let textFields = hypeController.textFields else {return}
+            guard let newCommentContent = textFields[0].text else {return}
+            HypeController.shared.saveHype(text: newCommentContent) { (success) in
+                if success {
+                    print("It Worked!")
+                }
+            }
+            self.tableView.reloadData()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
+            hypeController.dismiss(animated: true, completion: nil)
+        }
+        
+        hypeController.addAction(postAction)
+        hypeController.addAction(cancelAction)
+        
+        
+        present(hypeController, animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "hypeCell", for: indexPath)
+        cell.textLabel?.text = HypeController.shared.hypes[indexPath.row].hypeText
+        cell.detailTextLabel?.text = HypeController.shared.hypes[indexPath.row].timestamp.formatDate()
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

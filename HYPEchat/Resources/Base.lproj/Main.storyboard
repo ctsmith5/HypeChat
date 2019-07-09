@@ -46,7 +46,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1Kb-eI-OqW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="xSh-Re-kf2"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="xSh-Re-kf2">
+                            <connections>
+                                <action selector="newHypeButtonPRessed:" destination="7pk-FX-z0T" id="v1q-W6-P5S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6O-ke-1WP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

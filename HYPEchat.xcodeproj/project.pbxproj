@@ -16,6 +16,8 @@
 		AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71422D4F7DC004C5EED /* HypeTableViewController.swift */; };
 		AFFFF71922D4F901004C5EED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFFF71822D4F901004C5EED /* CloudKit.framework */; };
 		AFFFF71B22D4FA19004C5EED /* Hype.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71A22D4FA19004C5EED /* Hype.swift */; };
+		AFFFF71D22D50037004C5EED /* HypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71C22D50037004C5EED /* HypeController.swift */; };
+		AFFFF71F22D5097B004C5EED /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFF71E22D5097B004C5EED /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		AFFFF71622D4F8FE004C5EED /* HYPEchat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HYPEchat.entitlements; sourceTree = "<group>"; };
 		AFFFF71822D4F901004C5EED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AFFFF71A22D4FA19004C5EED /* Hype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hype.swift; sourceTree = "<group>"; };
+		AFFFF71C22D50037004C5EED /* HypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypeController.swift; sourceTree = "<group>"; };
+		AFFFF71E22D5097B004C5EED /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		AFFFF71122D4F70E004C5EED /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				AFFFF71C22D50037004C5EED /* HypeController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				AFFFF6EE22D4F3DC004C5EED /* AppDelegate.swift */,
 				AFFFF6F022D4F3DC004C5EED /* SceneDelegate.swift */,
 				AFFFF6F722D4F3DF004C5EED /* Assets.xcassets */,
+				AFFFF71E22D5097B004C5EED /* DateExtension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -249,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFFF71D22D50037004C5EED /* HypeController.swift in Sources */,
+				AFFFF71F22D5097B004C5EED /* DateExtension.swift in Sources */,
 				AFFFF6EF22D4F3DC004C5EED /* AppDelegate.swift in Sources */,
 				AFFFF71522D4F7DC004C5EED /* HypeTableViewController.swift in Sources */,
 				AFFFF6F122D4F3DC004C5EED /* SceneDelegate.swift in Sources */,

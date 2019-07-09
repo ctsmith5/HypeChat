@@ -29,14 +29,29 @@ class HypeController {
                 completion(false)
                 return
             }
-            self.hypes.append(hype)
+            self.hypes.insert(hype, at: 0)
             completion(true)
         }
     }
     
     //Fetch
     func fetchHypes(completion: @escaping (Bool) -> Void){
-        
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: HypeConstants.typeKey, predicate: predicate)
+        query.sortDescriptors = [NSSortDescriptor(key: HypeConstants.typeKey, ascending: true)]
+        publicDB.perform(query, inZoneWith: nil) { (records, error) in
+            if let error = error {
+                print(error)
+                print("/n------/n")
+                print(error.localizedDescription)
+                completion(false)
+                return
+            }
+            guard let records = records else {completion(false) ; return}
+            let hypes = records.compactMap {(Hype(ckRecord: $0))}
+            self.hypes = hypes
+            completion(true)
+        }
     }
     
     //Subscription

@@ -8,14 +8,29 @@
 
 import UIKit
 
-class HypeTableViewController: UITableViewController {
+class HypeTableViewController: UITableViewController, UITextFieldDelegate {
 
+    var refresh: UIRefreshControl = UIRefreshControl()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        loadData()
+        
+        refresh.attributedTitle = NSAttributedString(string: "Pull to see new hype")
+        refresh.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        self.tableView.addSubview(refresh)
     }
-
+    // Helper
+   @objc func loadData(){
+        HypeController.shared.fetchHypes { (success) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.refresh.endRefreshing()
+            }
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,10 +54,10 @@ class HypeTableViewController: UITableViewController {
             guard let newCommentContent = textFields[0].text else {return}
             HypeController.shared.saveHype(text: newCommentContent) { (success) in
                 if success {
-                    print("It Worked!")
+                    self.loadData()
                 }
             }
-            self.tableView.reloadData()
+            
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in
             hypeController.dismiss(animated: true, completion: nil)
@@ -62,7 +77,6 @@ class HypeTableViewController: UITableViewController {
         return cell
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

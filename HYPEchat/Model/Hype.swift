@@ -20,9 +20,9 @@ class Hype {
 
 extension Hype {
     convenience init?(ckRecord: CKRecord) {
-        guard let hypeText = ckRecord[HypeConstants.typeKey] as? String,
+        guard let hypeText = ckRecord[HypeConstants.textKey] as? String,
             let hypeTimestamp = ckRecord[HypeConstants.timestampKey] as? Date else {return nil}
-        self.init(hypeText: hypeText, timestamp: hypeTimestamp)
+            self.init(hypeText: hypeText, timestamp: hypeTimestamp)
     }
 }
 
@@ -31,8 +31,6 @@ extension CKRecord {
         self.init(recordType: HypeConstants.typeKey)
         self.setValue(hype.hypeText, forKey: HypeConstants.textKey)
         self.setValue(hype.timestamp, forKey: HypeConstants.timestampKey)
-        
-        
     }
 }
 
